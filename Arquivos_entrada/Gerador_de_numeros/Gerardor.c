@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "../../Especificacoes.h"
 
-#define QUANT_NUMEROS 10000
+
 
 #define Arquivo_cresente "../../numeros_cresente.txt"
 #define Arquivo_decrescente "../../numeros_decrescente.txt"
