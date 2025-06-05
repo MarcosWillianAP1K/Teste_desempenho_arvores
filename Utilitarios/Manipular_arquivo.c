@@ -7,7 +7,7 @@ FILE *abrir_arquivo(const char *nome_arquivo, const char *modo)
 
     if (arquivo == NULL)
     {
-        perror("Erro ao abrir o arquivo");
+        printf("Erro ao abrir o arquivo");
         exit(EXIT_FAILURE);
     }
 

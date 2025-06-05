@@ -5,13 +5,13 @@
 
 
 
-#define Arquivo_cresente "../../numeros_cresente.txt"
+#define Arquivo_crescente "../../numeros_crescente.txt"
 #define Arquivo_decrescente "../../numeros_decrescente.txt"
 #define Arquivo_aleatorio "../../numeros_aleatorios.txt"
 
 void gerarNumerosCrescente()
 {
-    FILE *arquivo = fopen(Arquivo_cresente, "w");
+    FILE *arquivo = fopen(Arquivo_crescente, "w");
     if (arquivo == NULL)
     {
         perror("Erro ao abrir o arquivo para escrita");
@@ -86,7 +86,7 @@ void gerarNumerosAleatorios()
 
 void verificar_arquivos_foram_gerados()
 {
-    FILE *arquivoCrescente = fopen(Arquivo_cresente, "r");
+    FILE *arquivoCrescente = fopen(Arquivo_crescente, "r");
     FILE *arquivoDecrescente = fopen(Arquivo_decrescente, "r");
     FILE *arquivoAleatorio = fopen(Arquivo_aleatorio, "r");
 
