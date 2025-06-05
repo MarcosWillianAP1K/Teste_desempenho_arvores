@@ -16,3 +16,10 @@
 #define Diretorio_saida_2_3 "../Resultados/2-3.txt"
 #define Diretorio_saida_4_5 "../Resultados/4-5.txt"
 
+enum TipoTempo
+{
+    MILISEGUNDOS,
+    SEGUNDOS
+};
+
+#define TIPO_TEMPO MILISEGUNDOS
