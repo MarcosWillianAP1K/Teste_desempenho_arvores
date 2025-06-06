@@ -31,21 +31,21 @@ int *buscar_23(Arv23 *raiz, int info)
 
     if (raiz != NULL)
     {
-        if (info == raiz->info1)
-        {
-            retorno = &(raiz->info1);
-        }
-        else if (raiz->nInfo == 2 && info == raiz->info2)
-        {
-            retorno = &(raiz->info2);
-        }
-        else if (info < raiz->info1)
+        if (info < raiz->info1)
         {
             retorno = buscar_23(raiz->esq, info);
         }
-        else if (raiz->nInfo == 1 || info < raiz->info2)
+        else if (info == raiz->info1)
+        {
+            retorno = &(raiz->info1);
+        }
+        else if (raiz->nInfo >= 2 && info < raiz->info2)
         {
             retorno = buscar_23(raiz->cen, info);
+        }
+        else if (raiz->nInfo >= 2 && info == raiz->info2)
+        {
+            retorno = &(raiz->info2);
         }
         else
         {
