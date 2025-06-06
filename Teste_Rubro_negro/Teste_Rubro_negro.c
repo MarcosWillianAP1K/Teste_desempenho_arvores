@@ -24,6 +24,7 @@ double teste_remocao_rubro_negro(RUBRO_NEGRO **arvore, int valor)
         printf("Erro ao remover valor %d da árvore rubro-negra\n", valor);
 
     clock_t tempo = cronometro_finalizar(inicio);
+
     return converter_para_milisegundos(tempo);
 }
 
@@ -105,7 +106,7 @@ void executar_testes_rubro_negro(const char *diretorio_entrada, const char *dire
             break;
         }
 
-        tempo_insercao += teste_remocao_rubro_negro(&arvore, valor);
+        tempo_remocao += teste_remocao_rubro_negro(&arvore, valor);
     }
 
     fclose(arquivo);

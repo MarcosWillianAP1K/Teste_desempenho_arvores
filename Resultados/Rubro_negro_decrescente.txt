@@ -11,15 +11,15 @@ Ultimo numero consultado: 1
 ===========RESULTADOS DO TESTE===========
 
 Tempo medio:
-Tempo de Inserção: 0.4408500000 milisegundos
-Tempo de Remoção: 0.0000000000 milisegundos
-Tempo de Consulta primeiro: 1550000.0000000000 nanosegundos
+Tempo de Inserção: 0.0008100000 milisegundos
+Tempo de Remoção: 0.4884400000 milisegundos
+Tempo de Consulta primeiro: 900000.0000000000 nanosegundos
 Tempo de Consulta ultimo: 0.0000000000 nanosegundos
 
 Tempo total:
-Tempo total de Inserção: 44085.0000000000 milisegundos
-Tempo total de Remoção: 0.0000000000 milisegundos
-Tempo total de Consulta primeiro: 31000000.0000000000 nanosegundos
+Tempo total de Inserção: 81.0000000000 milisegundos
+Tempo total de Remoção: 48844.0000000000 milisegundos
+Tempo total de Consulta primeiro: 18000000.0000000000 nanosegundos
 Tempo total de Consulta ultimo: 0.0000000000 nanosegundos
 
 =========================================
