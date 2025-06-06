@@ -4,7 +4,7 @@
 int main()
 {
 
-    int resultado = system("gcc -o Executavel ../main.c ../Teste_Rubro_negro/Teste_Rubro_negro.c ../Teste_Rubro_negro/Rubro_negro.c  ../Utilitarios/Cronometro.c");
+    int resultado = system("gcc -o Executavel ../main.c ../Teste_Rubro_negro/Teste_Rubro_negro.c ../Teste_Rubro_negro/Rubro_negro.c ../Teste_2-3/Teste_2-3.c ../Teste_2-3/2-3.c  ../Utilitarios/Cronometro.c");
 
     if (resultado == 0)
     {

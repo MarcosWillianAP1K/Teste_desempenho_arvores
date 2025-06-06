@@ -16,9 +16,9 @@
 #define Diretorio_saida_rubro_negro_decrescente "../Resultados/Rubro_negro_decrescente.txt"
 #define Diretorio_saida_rubro_negro_aleatorio "../Resultados/Rubro_negro_aleatorio.txt"
 
-#define Diretorio_saida_2_3_crescente "../Resultados/2-3_crescente.txt"
-#define Diretorio_saida_2_3_decrescente "../Resultados/2-3_decrescente.txt"
-#define Diretorio_saida_2_3_aleatorio "../Resultados/2-3_aleatorio.txt"
+#define Diretorio_saida_23_crescente "../Resultados/2-3_crescente.txt"
+#define Diretorio_saida_23_decrescente "../Resultados/2-3_decrescente.txt"
+#define Diretorio_saida_23_aleatorio "../Resultados/2-3_aleatorio.txt"
 
 #define Diretorio_saida_4_5_crescente "../Resultados/4-5_crescente.txt"
 #define Diretorio_saida_4_5_decrescente "../Resultados/4-5_decrescente.txt"

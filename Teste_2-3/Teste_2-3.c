@@ -1,52 +1,50 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Teste_rubro_negro.h"
-#include "Rubro_negro.h"
+#include "Teste_2-3.h"
+#include "2-3.h"
 #include "../Especificacoes.h"
 #include "../Utilitarios/Cronometro.h"
 
-double teste_insercao_rubro_negro(RUBRO_NEGRO **arvore, int valor)
+double teste_insercao_23(Arv23 **arvore, int valor)
 {
     clock_t inicio = cronometro_iniciar();
 
-    inserir_rubro_negro(arvore, valor);
-        
+    insere_23(arvore, valor);
 
     clock_t tempo = cronometro_finalizar(inicio);
     return converter_para_milisegundos(tempo);
 }
 
-double teste_remocao_rubro_negro(RUBRO_NEGRO **arvore, int valor)
+double teste_remocao_23(Arv23 **arvore, int valor)
 {
     clock_t inicio = cronometro_iniciar();
 
-    remover_rubro_negro(arvore, valor);
+    remover_23(arvore, valor);
 
     clock_t tempo = cronometro_finalizar(inicio);
 
     return converter_para_milisegundos(tempo);
 }
 
-double teste_consulta_rubro_negro(RUBRO_NEGRO **arvore, int valor)
+double teste_consulta_23(Arv23 **arvore, int valor)
 {
     clock_t inicio = cronometro_iniciar();
 
-    buscar_rubro_negro(*arvore, valor);
-        
+    buscar_23(*arvore, valor);
 
     clock_t tempo = cronometro_finalizar(inicio);
     return converter_para_nanosegundos(tempo);
 }
 
-void executar_testes_rubro_negro(const char *diretorio_entrada, const char *diretorio_saida, const char *complementar)
+void executar_testes_23(const char *diretorio_entrada, const char *diretorio_saida, const char *complementar)
 {
-    printf("Executando testes da árvore rubro-negra...\n");
+    printf("Executando testes da árvore 2-3...\n");
     if (diretorio_entrada == NULL || diretorio_saida == NULL)
     {
         return;
     }
 
-    RUBRO_NEGRO *arvore = NULL;
+    Arv23 *arvore = NULL;
 
     double tempo_insercao = 0;
     double tempo_remocao = 0;
@@ -76,7 +74,7 @@ void executar_testes_rubro_negro(const char *diretorio_entrada, const char *dire
             primeiro_numero = valor;
         }
 
-        tempo_insercao += teste_insercao_rubro_negro(&arvore, valor);
+        tempo_insercao += teste_insercao_23(&arvore, valor);
     }
 
     ultimo_numero = valor;
@@ -86,13 +84,13 @@ void executar_testes_rubro_negro(const char *diretorio_entrada, const char *dire
     // Fazer a busca do primeiro elemento inserido
     for (int j = 0; j < QUANT_DE_TESTES_CONSULTA; j++)
     {
-        tempo_consulta1 += teste_consulta_rubro_negro(&arvore, primeiro_numero);
+        tempo_consulta1 += teste_consulta_23(&arvore, primeiro_numero);
     }
 
     // Fazer a busca do ultimo elemento inserido
     for (int j = 0; j < QUANT_DE_TESTES_CONSULTA; j++)
     {
-        tempo_consulta2 += teste_consulta_rubro_negro(&arvore, ultimo_numero);
+        tempo_consulta2 += teste_consulta_23(&arvore, ultimo_numero);
     }
 
     rewind(arquivo);
@@ -106,10 +104,10 @@ void executar_testes_rubro_negro(const char *diretorio_entrada, const char *dire
             break;
         }
 
-        tempo_remocao += teste_remocao_rubro_negro(&arvore, valor);
+        tempo_remocao += teste_remocao_23(&arvore, valor);
     }
 
-    liberar_rubro_negro(&arvore);
+    libera_23(&arvore);
 
     fclose(arquivo);
     fflush(stdin);
@@ -122,7 +120,7 @@ void executar_testes_rubro_negro(const char *diretorio_entrada, const char *dire
         return;
     }
 
-    fprintf(arquivo,"Resultados dos Testes - Árvore Rubro-Negra\n\n");
+    fprintf(arquivo,"Resultados dos Testes - Árvore 2-3\n\n");
     fprintf(arquivo,"===========ESPECIFICAÇÕES===========\n\n");
 
     if (complementar != NULL)
