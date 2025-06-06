@@ -1,0 +1,25 @@
+Resultados dos Testes - Árvore Rubro-Negra
+
+===========ESPECIFICAÇÕES===========
+
+O de teste de inserção/remoção: Crescente
+Quantidade de Numeros inseridos: 100000
+Quantidade de Testes consulta: 20
+
+Primeiro numero consultado: 1
+Ultimo numero consultado: 100000
+===========RESULTADOS DO TESTE===========
+
+Tempo medio:
+Tempo de Inserção: 0.0017600000 milisegundos
+Tempo de Remoção: 0.0000000000 milisegundos
+Tempo de Consulta primeiro: 0.0000000000 nanosegundos
+Tempo de Consulta ultimo: 850000.0000000000 nanosegundos
+
+Tempo total:
+Tempo total de Inserção: 176.0000000000 milisegundos
+Tempo total de Remoção: 0.0000000000 milisegundos
+Tempo total de Consulta primeiro: 0.0000000000 nanosegundos
+Tempo total de Consulta ultimo: 17000000.0000000000 nanosegundos
+
+=========================================
