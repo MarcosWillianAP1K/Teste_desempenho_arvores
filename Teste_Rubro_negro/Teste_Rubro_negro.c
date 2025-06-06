@@ -9,8 +9,8 @@ double teste_insercao_rubro_negro(RUBRO_NEGRO **arvore, int valor)
 {
     clock_t inicio = cronometro_iniciar();
 
-    if (!inserir_rubro_negro(arvore, valor))
-        printf("Erro ao inserir valor %d na árvore rubro-negra\n", valor);
+    inserir_rubro_negro(arvore, valor);
+        
 
     clock_t tempo = cronometro_finalizar(inicio);
     return converter_para_milisegundos(tempo);
@@ -20,8 +20,7 @@ double teste_remocao_rubro_negro(RUBRO_NEGRO **arvore, int valor)
 {
     clock_t inicio = cronometro_iniciar();
 
-    if (!remover_rubro_negro(arvore, valor))
-        printf("Erro ao remover valor %d da árvore rubro-negra\n", valor);
+    remover_rubro_negro(arvore, valor);
 
     clock_t tempo = cronometro_finalizar(inicio);
 
@@ -32,8 +31,8 @@ double teste_consulta_rubro_negro(RUBRO_NEGRO **arvore, int valor)
 {
     clock_t inicio = cronometro_iniciar();
 
-    if (!buscar_rubro_negro(*arvore, valor))
-        printf("Erro ao consultar valor %d na árvore rubro-negra\n", valor);
+    buscar_rubro_negro(*arvore, valor);
+        
 
     clock_t tempo = cronometro_finalizar(inicio);
     return converter_para_nanosegundos(tempo);
@@ -81,8 +80,9 @@ void executar_testes_rubro_negro(const char *diretorio_entrada, const char *dire
     }
 
     ultimo_numero = valor;
-    
-    
+   
+
+
     // Fazer a busca do primeiro elemento inserido
     for (int j = 0; j < QUANT_DE_TESTES_CONSULTA; j++)
     {
@@ -108,6 +108,8 @@ void executar_testes_rubro_negro(const char *diretorio_entrada, const char *dire
 
         tempo_remocao += teste_remocao_rubro_negro(&arvore, valor);
     }
+   
+
 
     fclose(arquivo);
     fflush(stdin);
