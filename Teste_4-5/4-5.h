@@ -14,7 +14,8 @@ typedef struct Arv45
 
 
 
-// Prototypes
+int *buscar_45(Arv45 *raiz, int info);
+
 Arv45 *cria_no_45(int info, Arv45 *F_esq, Arv45 *F_f_cen1);
 
 int insere_45(Arv45 **raiz, int valor);
@@ -25,4 +26,4 @@ void imprime_arvore_visual_45(Arv45 *raiz, char *prefixo, int eh_ultimo, int eh_
 
 int remover_45(Arv45 **raiz, int valor);
 
-void libera_arvore_45(Arv45 **raiz);
+void libera_45(Arv45 **raiz);

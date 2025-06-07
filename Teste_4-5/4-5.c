@@ -1279,15 +1279,15 @@ void imprime_arvore_visual_45(Arv45 *raiz, char *prefixo, int eh_ultimo, int eh_
 }
 
 //================ LIBERAR MEMORIA ==================
-void libera_arvore_45(Arv45 **raiz)
+void libera_45(Arv45 **raiz)
 {
     if (raiz != NULL && *raiz != NULL)
     {
-        libera_arvore_45(&((*raiz)->esq));
-        libera_arvore_45(&((*raiz)->f_cen1));
-        libera_arvore_45(&((*raiz)->f_cen2));
-        libera_arvore_45(&((*raiz)->f_cen3));
-        libera_arvore_45(&((*raiz)->dir));
+        libera_45(&((*raiz)->esq));
+        libera_45(&((*raiz)->f_cen1));
+        libera_45(&((*raiz)->f_cen2));
+        libera_45(&((*raiz)->f_cen3));
+        libera_45(&((*raiz)->dir));
         free(*raiz);
         *raiz = NULL;
     }

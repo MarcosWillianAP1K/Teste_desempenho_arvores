@@ -1,4 +1,4 @@
-Resultados dos Testes - Árvore Rubro-Negra
+Resultados dos Testes - Árvore 2-3
 
 ===========ESPECIFICAÇÕES===========
 
@@ -12,13 +12,13 @@ Ultimo numero consultado: 1
 
 Tempo medio:
 Tempo de Inserção: 0.0003400000 milisegundos
-Tempo de Remoção: 0.0003700000 milisegundos
+Tempo de Remoção: 0.0003800000 milisegundos
 Tempo de Consulta primeiro: 0.0000000000 nanosegundos
 Tempo de Consulta ultimo: 0.0000000000 nanosegundos
 
 Tempo total:
 Tempo total de Inserção: 34.0000000000 milisegundos
-Tempo total de Remoção: 37.0000000000 milisegundos
+Tempo total de Remoção: 38.0000000000 milisegundos
 Tempo total de Consulta primeiro: 0.0000000000 nanosegundos
 Tempo total de Consulta ultimo: 0.0000000000 nanosegundos
 

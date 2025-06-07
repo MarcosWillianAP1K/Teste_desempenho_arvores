@@ -43,19 +43,9 @@ void gerarNumerosDecrescente()
     fclose(arquivo);
 }
 
-short int verificar_se_numero_ja_existe(int vetor[], int numero)
-{
-    for (int i = 0; i < QUANT_NUMEROS; i++)
-    {
-        if (vetor[i] == numero)
-        {
-            return 1; // Número já existe
-        }
-    }
-    return 0; // Número não existe
-}
 
 void gerarNumerosAleatorios()
+
 {
     FILE *arquivo = fopen(Arquivo_aleatorio, "w");
     if (arquivo == NULL)
@@ -64,23 +54,30 @@ void gerarNumerosAleatorios()
         return;
     }
 
-    int vetor[QUANT_NUMEROS] = {0}; // Vetor para verificar números já existentes
-
     srand(time(NULL)); // Semente para números aleatórios
-
-    for (int i = 0; i < QUANT_NUMEROS; i++)
+    
+    // Usar array para rastrear números já gerados
+    int *numeros_usados = (int *)calloc(QUANT_NUMEROS + 1, sizeof(int));
+    if (numeros_usados == NULL) {
+        perror("Erro ao alocar memória");
+        fclose(arquivo);
+        return;
+    }
+    
+    int contador = 0;
+    while (contador < QUANT_NUMEROS)
     {
-
         int numero = rand() % QUANT_NUMEROS + 1; // Gera número entre 1 e QUANT_NUMEROS
         
-        while (verificar_se_numero_ja_existe(vetor, numero))
-        {
-            numero = rand() % QUANT_NUMEROS + 1; // Gera novo número se já existir
+        // Verifica se o número já foi usado
+        if (numeros_usados[numero] == 0) {
+            numeros_usados[numero] = 1; // Marca como usado
+            fprintf(arquivo, "%d\n", numero);
+            contador++;
         }
-        
-        fprintf(arquivo, "%d\n", numero);
     }
-
+    
+    free(numeros_usados);
     fclose(arquivo);
 }
 

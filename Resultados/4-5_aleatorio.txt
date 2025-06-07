@@ -1,0 +1,25 @@
+Resultados dos Testes - Árvore 4-5
+
+===========ESPECIFICAÇÕES===========
+
+O de teste de inserção/remoção: Aleatório
+Quantidade de Numeros inseridos: 100000
+Quantidade de Testes consulta: 20
+
+Primeiro numero consultado: 843452
+Ultimo numero consultado: 585434
+===========RESULTADOS DO TESTE===========
+
+Tempo medio:
+Tempo de Inserção: 0.0004300000 milisegundos
+Tempo de Remoção: 0.0008100000 milisegundos
+Tempo de Consulta primeiro: 0.0000000000 nanosegundos
+Tempo de Consulta ultimo: 0.0000000000 nanosegundos
+
+Tempo total:
+Tempo total de Inserção: 43.0000000000 milisegundos
+Tempo total de Remoção: 81.0000000000 milisegundos
+Tempo total de Consulta primeiro: 0.0000000000 nanosegundos
+Tempo total de Consulta ultimo: 0.0000000000 nanosegundos
+
+=========================================

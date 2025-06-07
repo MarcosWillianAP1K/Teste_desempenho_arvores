@@ -20,6 +20,6 @@
 #define Diretorio_saida_23_decrescente "../Resultados/2-3_decrescente.txt"
 #define Diretorio_saida_23_aleatorio "../Resultados/2-3_aleatorio.txt"
 
-#define Diretorio_saida_4_5_crescente "../Resultados/4-5_crescente.txt"
-#define Diretorio_saida_4_5_decrescente "../Resultados/4-5_decrescente.txt"
-#define Diretorio_saida_4_5_aleatorio "../Resultados/4-5_aleatorio.txt"
+#define Diretorio_saida_45_crescente "../Resultados/4-5_crescente.txt"
+#define Diretorio_saida_45_decrescente "../Resultados/4-5_decrescente.txt"
+#define Diretorio_saida_45_aleatorio "../Resultados/4-5_aleatorio.txt"
