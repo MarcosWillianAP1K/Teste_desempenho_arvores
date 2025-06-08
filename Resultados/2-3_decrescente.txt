@@ -3,23 +3,23 @@ Resultados dos Testes - Árvore 2-3
 ===========ESPECIFICAÇÕES===========
 
 O de teste de inserção/remoção: Decrescente
-Quantidade de Numeros inseridos: 100000
-Quantidade de Testes consulta: 20
+Quantidade de Numeros inseridos: 1000000
+Quantidade de Testes consulta: 1000
 
-Primeiro numero consultado: 100000
+Primeiro numero consultado: 1000000
 Ultimo numero consultado: 1
 ===========RESULTADOS DO TESTE===========
 
 Tempo medio:
-Tempo de Inserção: 0.0003400000 milisegundos
-Tempo de Remoção: 0.0003800000 milisegundos
+Tempo de Inserção: 0.0002330000 milisegundos
+Tempo de Remoção: 0.0001790000 milisegundos
 Tempo de Consulta primeiro: 0.0000000000 nanosegundos
-Tempo de Consulta ultimo: 0.0000000000 nanosegundos
+Tempo de Consulta ultimo: 1000.0000000000 nanosegundos
 
 Tempo total:
-Tempo total de Inserção: 34.0000000000 milisegundos
-Tempo total de Remoção: 38.0000000000 milisegundos
+Tempo total de Inserção: 233.0000000000 milisegundos
+Tempo total de Remoção: 179.0000000000 milisegundos
 Tempo total de Consulta primeiro: 0.0000000000 nanosegundos
-Tempo total de Consulta ultimo: 0.0000000000 nanosegundos
+Tempo total de Consulta ultimo: 1000000.0000000000 nanosegundos
 
 =========================================

@@ -3,10 +3,10 @@
 #pragma once
 
 
-#define QUANT_NUMEROS 100000
+#define QUANT_NUMEROS 1000000
 
 
-#define QUANT_DE_TESTES_CONSULTA 20
+#define QUANT_DE_TESTES_CONSULTA 1000
 
 #define Diretorio_entrada_crescente "../Arquivos_entrada/numeros_crescente.txt"
 #define Diretorio_entrada_decrescente "../Arquivos_entrada/numeros_decrescente.txt"

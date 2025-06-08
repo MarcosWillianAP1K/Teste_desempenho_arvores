@@ -170,7 +170,7 @@ void balancear(RUBRO_NEGRO **raiz)
         de_ladinho_para_esquerda(raiz);
     }
 
-    if (cor((*raiz)->esquerda) == VERMELHO && cor((*raiz)->esquerda->esquerda))
+    if (cor((*raiz)->esquerda) == VERMELHO && cor((*raiz)->esquerda->esquerda) == VERMELHO)
     {
         de_ladinho_para_direita(raiz);
     }
